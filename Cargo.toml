@@ -1,0 +1,16 @@
+[package]
+name = "makhno-patcher"
+version = "2.2.3"
+edition = "2021"
+description = "MakhnoYMMod 2.2.3 — патчер клиента Яндекс Музыки (Windows/Linux)"
+license = "MIT"
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+regex = "1"
+
+[profile.release]
+lto = true
+strip = true
+opt-level = "z"
+panic = "abort"

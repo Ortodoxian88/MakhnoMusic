@@ -1,0 +1,14 @@
+target/
+*.asar
+*.deb
+*.exe
+app.asar.unpacked/
+.cargo/
+installer/app/
+dist/
+*.zip
+*.orig
+installer/app/
+dist/
+*.zip
+*.orig
